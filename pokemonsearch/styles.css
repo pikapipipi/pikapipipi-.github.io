@@ -8,6 +8,7 @@ body {
 
 .tableOutline{
   width: 90%;
+  max-width: 850px;
   margin-left: auto;
   margin-right: auto;
   min-height: 325px;  margin-bottom: 10px;
