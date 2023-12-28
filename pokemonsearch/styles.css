@@ -2,7 +2,7 @@ body {
   font-family: Lucida Console;
   background-color: #c4bebb;
   color: #272929;
- text-align: center;
+  text-align: center;
   align-items: center;
 }
 
@@ -11,56 +11,61 @@ body {
   max-width: 850px;
   margin-left: auto;
   margin-right: auto;
-  min-height: 325px;  margin-bottom: 10px;
-padding: 10px;background-color: #9bbc0f;
-border: 5px outset #272929
+  min-height: 325px;  
+  margin-bottom: 10px;
+  padding: 10px;background-color: #9bbc0f;
+  border: 5px outset #272929;
+  border-radius: 5px;
 }
 
 /* The table for Pokemon */
 .tablePoke{
-width: 89%;
-margin-left: auto;
-margin-right: auto;
-background-color: #9bbc0f;
-border: 5px double #3e4943;
-text-align: left;
-font-family: Lucida Console;
-table-layout: fixed;
- border-radius: 3px;
+  width: 89%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #9bbc0f;
+  border: 5px double #3e4943;
+  text-align: left;
+  font-family: Lucida Console;
+  table-layout: fixed;
+  border-radius: 3px;
 }
 
-img {
-  height: 45%;
+.pkmimg{
+  margin-left: auto;
+  margin-right: auto;
   width: 45%;
+  object-fit: contain;
 }
+
 /* The table for Pokemon */
 
 /* The table for Stats */
 .tableStats{
-width: 90%;
-margin-left: auto;
-margin-right: auto;
-background-color: #9bbc0f;
-border: 2px solid #3e4943;
-font-family: Lucida Console;
-text-align: center;
-table-layout: fixed;
-border-radius: 3px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #9bbc0f;
+  border: 2px solid #3e4943;
+  font-family: Lucida Console;
+  text-align: center;
+  table-layout: fixed;
+  border-radius: 3px;
 }
 th{
-text-align: center;
-margin-left: auto;
-margin-right: auto;
-border: 1px solid #3e4943;
-background-color: #5f795e;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #3e4943;
+  background-color: #5f795e;
 }
 
 td,tr {
   text-align: center;
   margin-left: auto;
-margin-right: auto;
-width: 10%; /* no idea why set 10% result 100% */
-border: 1px solid #3e4943;
+  margin-right: auto;
+  width: 10%; /* no idea why set 10% result 100% */
+  border: 1px solid #3e4943;
 }
 /* The table for Stats */
 

@@ -1,0 +1,44 @@
+body {
+  font-family: Lucida Console;
+  background-color: #c4bebb;
+  color: #272929;
+ text-align: center;
+  align-items: center;
+}
+
+.definitionPalindrome{
+  width: 85%;
+  text-align: justify;
+  padding : 3%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #aaaaaa;
+  border-radius: 15px;
+}
+
+.tableOutline{
+  width: 90%;
+  max-width: 850px;
+  aspect-ratio: 1 / 1;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: ;
+  margin-bottom: 10px;
+  padding: 10px;background-color: #9bbc0f;
+  border: 5px outset #272929;
+  border-radius: 5px;
+}
+
+.result{
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Lucida Console;
+  border: 5px double #3e4943;
+  border-radius: 3px;
+}
+
+#girafarig{
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}

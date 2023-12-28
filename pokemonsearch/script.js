@@ -6,7 +6,7 @@ const types = document.getElementById('types');
 const height = document.getElementById('height');
 const weight = document.getElementById('weight');
 
-const imageF = document.getElementById('sprite-container');
+const imageF = document.getElementById('imageF');
 const imageB = document.getElementById('imageB');
 
 const hp = document.getElementById('hp');
@@ -41,13 +41,13 @@ const fetchData = async (nameOrId) => {
     console.log(data)
     pkmName.innerHTML = `${data.name.toUpperCase()}`;
     pkmID.innerHTML = `#${data.id}`;
-    weight.innerHTML = `Weight: ${data.weight}`;
-    height.innerHTML = `Height: ${data.height}`;
+    weight.innerHTML = `Weight: ${data.weight} kg`;
+    height.innerHTML = `Height: ${data.height/10} m`;
     imageF.innerHTML = `
-      <img id="sprite" src="${data.sprites.front_default}" alt="${data.id} front">
+      <img id="imageF" class="pkmimg" src="${data.sprites.front_default}" alt="${data.id} front">
     `;
     imageB.innerHTML = `
-     <img id="imageB" src="${data.sprites.back_default}" alt="${data.id} back"> `;
+     <img id="imageB"  class="pkmimg" src="${data.sprites.back_default}" alt="${data.id} back"> `;
 
       types.innerHTML = data.types
       .map(obj => `<span class="type ${obj.type.name.toLowerCase()}">${obj.type.name.toUpperCase()}</span>`)
