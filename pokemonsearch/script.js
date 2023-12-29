@@ -66,4 +66,3 @@ const fetchData = async (nameOrId) => {
   fetchData('ditto');
   }
 };
-
