@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+<!-- Heading-->
+<header>
+  <img id="logo" src="../image/icon.png">
+  <h1>Hello World</h1>
+  <nav>
+	<ul>
+	  <li><a href="../index.html#about">About</a></li>
+	  <li><a href="../index.html#homework">freeCodeCamp</a></li>
+		<li><a href="../index.html#google">Google</a></li>
+	</ul>
+  </nav>
+</header>
+<!-- Heading-->
+      <h1 class="title">Pokemon Search App</h1>
+    <main>
+<!---1~2. You should have an input element with an id of search-input and a button element with an id of search-button--->
+<form id="search-form">
+  <label for="search-input">Search for Pokemon Name or ID:<br></label>
+<input type="text" id="search-input" name="search-input" required/>
+  <button id="search-button" style="border-radius: 8px">Search</button>
+</form>
+<br>
+<!---table outline is the outermost layer of tables--->
+<div class="tableOutline">
+<!---3~6.You should have elements with an id of pokemon-name, okemon-id,weight,height,types--->  
+<div class="tablePoke">
+  <table>
+<h3>
+<span id="pokemon-id"></span> <span id="pokemon-name"></span></h3>
+
+  <span id="weight"></span>
+  <br>
+  <span id="height"></span>
+<br><br>
+<span id="types"></span><br><br>
+
+  <span id="imageF"></span> 
+  <span id="imageB"></span>
+
+</table></div>
+   
+
+     <br> 
+ <!---7~13.You should have elements with an id of Stats--->   
+<div class="tableStats">
+  <table>
+    <tr>
+      <th>Base</th>
+      <th>Stats</th>
+    </tr>
+    <tr>
+      <td>HP:</td>
+      <td id="hp"></td>
+    </tr>
+    <tr>
+      <td>Attack:</td>
+      <td id="attack"></td>
+    </tr>
+    <tr>
+      <td>Defense:</td>
+      <td id="defense"></td>
+    </tr>
+    <tr>
+      <td>Sp. Atk:</td>
+      <td id="special-attack"></td>
+    </tr>
+    <tr>
+      <td>Sp. Def:</td>
+      <td id="special-defense"></td>
+    </tr>
+    <tr>
+      <td>Speed:</td>
+      <td id="speed" ></td>
+    </tr>
+  </table>
+</div><!---class="tableOutline" --->
+    </main>
+<p>
+<a href="../index.html" alt="home_page">
+↵ Return to the home page.
+</a>
+</p>
+    <script src="script.js"></script>
+  </body>
+</html>

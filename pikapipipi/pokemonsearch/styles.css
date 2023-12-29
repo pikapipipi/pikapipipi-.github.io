@@ -1,0 +1,234 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+#logo {
+  width:30px;
+  background-color: #121212;
+  aspect-ratio: 1 / 1;
+  padding: 0.4rem;
+}
+
+h1 {
+  color: #f1be32;
+  font-size: min(5vw, 1.2em);
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+nav > ul > li:hover {
+  background-color: #f1be32;
+  color: #1b1b32;
+  cursor: pointer;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+/* header */
+
+main {
+  padding-top: 50px; /* header 50px height*/
+}
+
+body {
+  text-align: center;
+  align-items: center;
+  background: #1b1b32;
+  color: #EFEFEF;
+  font-family: Helvetica;
+  margin: 0;
+}
+body a{
+  color: #EFEFEF;
+  text-decoration: none !important; 
+}
+body a:hover{
+  text-decoration: underline;
+  background-color: #f1be32;
+  color: #1b1b32;
+}
+
+.tableOutline{
+  width: 90%;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 325px;  
+  margin-bottom: 10px;
+  padding: 10px;background-color: #9bbc0f;
+  border: 5px outset #272929;
+  border-radius: 5px;
+}
+
+/* The table for Pokemon */
+.tablePoke{
+  width: 89%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #9bbc0f;
+  border: 5px double #3e4943;
+  text-align: left;
+  font-family: Lucida Console;
+  table-layout: fixed;
+  border-radius: 3px;
+}
+
+.pkmimg{
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  object-fit: contain;
+}
+
+/* The table for Pokemon */
+
+/* The table for Stats */
+.tableStats{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #9bbc0f;
+  border: 2px solid #3e4943;
+  font-family: Lucida Console;
+  text-align: center;
+  table-layout: fixed;
+  border-radius: 3px;
+}
+th{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #3e4943;
+  background-color: #5f795e;
+}
+
+td,tr {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%; /* no idea why set 10% result 100% */
+  border: 1px solid #3e4943;
+}
+/* The table for Stats */
+
+/* The Pokemon */
+.type {
+  margin-top: 34px;
+  margin-left: 3px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.normal {
+  background-color: #b7b7aa;
+}
+
+.fire {
+  background-color: #ff6f52;
+}
+
+.water {
+  background-color: #42a1ff;
+}
+
+.electric {
+  background-color: #fecc33;
+}
+
+.grass {
+  background-color: #78cc55;
+}
+
+.ice {
+  background-color: #66ccfe;
+}
+
+.fighting {
+  background-color: #d3887e;
+}
+
+.poison {
+  background-color: #c68bb7;
+}
+
+.ground {
+  background-color: #dfba52;
+}
+
+.flying {
+  background-color: #8899ff;
+}
+
+.psychic {
+  background-color: #ff66a3;
+}
+
+.bug {
+  background-color: #aabb23;
+}
+
+.rock {
+  background-color: #baaa66;
+}
+
+.ghost {
+  background-color: #9995d0;
+}
+
+.dragon {
+  background-color: #9e93f1;
+}
+
+.dark {
+  background-color: #b59682;
+}
+
+.steel {
+  background-color: #abaabb;
+}
+
+.fairy {
+  background-color: #ed99ed;
+}
+
+/* The type for labels */
