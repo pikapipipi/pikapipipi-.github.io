@@ -9,7 +9,7 @@
       height: 100px !important;
     }
     main {
-      padding-top: 100px !important; /* header 50px height*/
+      padding-top: 100px !important; /* header 100px height*/
     }
 }
 
@@ -92,8 +92,8 @@ body a{
 }
 body a:hover{
   text-decoration: underline;
-  background-color: #f1be32;
-  color: #1b1b32;
+  background-color: #f1be32 !important;
+  color: #1b1b32 !important;
 }
 
 section {
@@ -168,13 +168,14 @@ h2::before {
     color: #1b1b32;
 }
 
-.galleryhw a{
+.gallery a{
   color: #1b1b32;
   text-decoration: none !important;
 }
-.galleryhw a:hover{
-  text-decoration: underline overline #f1be32!important;
-  color: #206060;
+.gallery a:hover{
+  background-color: #f1be32 !important;
+  text-decoration: underline overline #f1be32 !important;
+  color: #206060 !important;
 }
 
 p {
