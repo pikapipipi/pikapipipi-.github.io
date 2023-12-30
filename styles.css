@@ -162,8 +162,9 @@ h2::before {
   
 }
 .gallerycaption {
+    width: 95%;
     display: block;
-    align: left;
+    text-align: left;
     margin: 5px;
     color: #1b1b32;
 }
