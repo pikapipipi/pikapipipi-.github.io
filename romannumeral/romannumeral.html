@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Roman Numeral Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+<!-- About-->
+	<section aria-labelledby="About">
+	  <h2 id="about">Roman Numeral Converter</h2>
+	  <div class="info">
+	  </div>
+	</section>
+<!-- About-->
+      
+<!-- Input form -->
+      <form id="input-form">
+          <label for="number">Enter in number to convert for Roman Numeral:<br></label>
+          <input type="number" id="number" name="text-input"/>
+          <button id="convert-btn" style="border-radius: 8px">Convert</button>
+      </form>
+      <br>
+
+<!---table outline is the outermost layer of tables--->
+      <div id="test" class="tableOutline">
+          <div id="output" class="roman big"></div>
+      </div>
+
+      <div class="definition">Roman numerals are based on seven symbols and can be written using various combinations to represent  numerals, for example:<br/><br/>
+1984 <br/>
+= (1×1000) + (1×500 + 4×100) + (1×50 + 3×10) + (4×1)<br/>
+<span class="roman">
+= (M) + (D + CCCC) + (L + XXX) + (IIII)<br/>
+= MDCCCCLXXXIIII<br/></span>
+   OR <br/>
+= (1×1000) + (1×1000 - 1×100) + (1×50 + 3×10) + (5 - 1)<br/> 
+<span class="roman">
+= (M) + (-C + M) + (L + XXX) + (-V + I)<br/>
+= MCMLXXXIV<br/></span>
+<br/>
+  <table class="tableStats roman">
+    <tr>
+      <th>Roman numerals</th>
+      <th>Arabic numerals</th>
+    </tr>
+    <tr><td>M</td><td>1000</td></tr>    
+    <tr><td>D</td><td>500</td></tr> 
+    <tr><td>C</td><td>100</td></tr> 
+    <tr><td>L</td><td>50</td></tr>    
+    <tr><td>X</td><td>10</td></tr> 
+    <tr><td>V</td><td>5</td></tr> 
+    <tr><td>I</td><td>1</td></tr> 
+  </table>
+  For details, please refer the <a href="https://simple.wikipedia.org/wiki/Roman_numerals">Wikipedia</a>. 
+      </div>
+    </main>
+<p>
+<a href="../index.html" alt="home_page">
+↵ Return to the home page.
+</a>
+    <!-- Script -->
+  <script src="script.js"></script>
+  </body>
+</html>
