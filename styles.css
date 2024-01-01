@@ -61,6 +61,7 @@ nav {
   float: left;
   overflow: hidden;
 }
+
 .dropdown .dropbtn {
   color: #dfdfe2;
   margin: 0 0.2rem;
@@ -70,7 +71,6 @@ nav {
   outline: none;
   background-color: inherit;
   font-family: inherit;
-
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #f1be32 !important;
@@ -172,7 +172,7 @@ h2::before {
   text-align: left;
   background-color: #c4bebb;
   margin-bottom: 4%;
-  padding: 1%;
+  padding: 5px;
 }
 
 .galleryhw img {
