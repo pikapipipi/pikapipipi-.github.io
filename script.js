@@ -14,7 +14,7 @@ const dataArr= [
       aalt:"palindrome",
       imgsrc: "./image/palindrome_checker.png",
       title: "Palindrome Checker",
-      caption: "Learning how to validate user input, perform calculations based on that input.",
+      caption: "Learning how to validate user input",
 	uploaddate: 20231225},
     {
       gallery:"freecodecamp",
@@ -22,7 +22,7 @@ const dataArr= [
       aalt:"roman numeral",
       imgsrc: "./image/romannumeral.png",
       title: "Roman Numeral Converter",
-      caption: "Learning how to validate user input, perform calculations based on that input.",
+      caption: "Learning how to perform calculations based on user input.",
 	uploaddate: 20231227
     },    {
       gallery:"freecodecamp",
@@ -30,7 +30,7 @@ const dataArr= [
       aalt:"webpage",
       imgsrc: "./image/webpage.png",
       title: "This Webpage",
-      caption: "Learning how to work with DOM manipulation, object destructuring, and data filtering.",
+      caption: "Learning how to work with DOM manipulation, object destructuring and data filtering.",
 	uploaddate: 20231228
 	},
     {
@@ -72,13 +72,12 @@ const setGalleryhw = (arr = dataArr, innerHTMLbyID) => {
 	  let galleryhwHTML = arr.map(
       ({ gallery, ahref, aalt, imgsrc, title, caption}) =>
         `<div class="galleryhw">
-			<a href="${ahref}" alt="${aalt}">
+			<a href="${ahref}" alt="${aalt}"${gallery === 'gsuite' ? ' target="_blank"' : ''}>
 				<img src="${imgsrc}"></a><br/>
 					<span class="gallerytitle">
-					<a href="${ahref}" alt="${aalt}">
-						 ${title}</a>
+					<a href="${ahref}" alt="${aalt}"${gallery === 'gsuite' ? ' target="_blank"' : ''}>${title}</a>
 					</span>
-					<span class="gallerycaption">${caption}</span>
+				<span class="gallerycaption">${caption}</span>
 		</div>`
     ).join("");
 
