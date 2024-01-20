@@ -1,0 +1,93 @@
+const currency ={
+"PENNY": 0.01,
+"NICKEL": 0.05,
+"DIME":	0.1,
+"QUARTER": 0.25,
+"ONE": 1,
+"FIVE":	5,
+"TEN":	10,
+"TWENTY": 20,
+"ONE HUNDRED":100,
+}
+// Deep copy function for arrays 
+//.slice() still references to the same objects
+function deepCopy(arr) {
+  return arr.map(subArray => [...subArray]);
+}
+
+function numberOfCoins(cid){
+  //let cidCoins = cid.slice();
+  let cidCoins = deepCopy(cid);
+  return cidCoins.map(item => [
+      item[0], // currency name
+      item[1], // total amount in drawer
+      currency[item[0]],//currency value
+      parseFloat((item[1] / currency[item[0]]).toFixed(0)) // number of coins
+    ]);
+}
+
+function checkCashRegister(price, cash, cid) {
+  let result = {status: "", change: []};
+  let change = [];
+  let diff = cash - price;
+
+  let cidCoins = numberOfCoins(cid);
+  //console.log(cidCoins)
+
+//sum in drawer
+const sumcid = cidCoins.reduce((sum, item) => sum + item[1], 0);
+/*let sumcid = 0;
+for(let i=0; i<cidCoins.length;++i){
+sumcid = parseFloat((sumcid + cidCoins[i][1]).toFixed(2));
+}
+*/
+
+//https://stackoverflow.com/questions/32576618/switch-statement-to-compare-values-greater-or-less-than-a-number
+switch (true) {
+  case (sumcid<diff):
+  console.log("case (sumcid<diff)")
+    result.status= "INSUFFICIENT_FUNDS";
+    result.change= [];
+    break;
+
+  case (sumcid==diff):
+  console.log("case (sumcid=diff)")
+    result.status= "CLOSED";
+    result.change= cid;
+    break;
+
+  case (sumcid>diff):
+  console.log("case (sumcid>diff)")
+    // search for coins,  sorted in highest to lowest order, large value coin have priority
+      for(let i=cidCoins.length-1; i >= 0;--i){
+        if(diff>=cidCoins[i][2]){
+
+          //count for the coins
+          const coinUsedNum = Math.min(Math.floor(diff / cidCoins[i][2]), cidCoins[i][3]); //make sure enough coins
+
+          if (coinUsedNum > 0) {    
+          let coinUsedValue = coinUsedNum *cidCoins[i][2];
+          diff = parseFloat((diff-coinUsedValue).toFixed(2));
+          let pushCharge = [cidCoins[i][0],coinUsedValue];
+          change.push(pushCharge);   
+          }
+        }
+    }
+//check any remains after looping hte drawer
+if(diff !==0){
+    result.status= "INSUFFICIENT_FUNDS";
+    result.change= [];
+}else{
+    result.status= "OPEN";
+    result.change= change;
+    break;
+}
+
+}
+  console.log(result)
+   return result;
+}
+
+////////////////////////////////
+checkCashRegister(19.5, 20, [["PENNY", 0.01], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 1], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]])
+

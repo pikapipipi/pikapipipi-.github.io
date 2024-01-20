@@ -1,0 +1,135 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+@media only screen and (max-width: 400px) {
+    header {
+      height: 100px !important;
+    }
+    main {
+      padding-top: 100px !important; /* header 50px height*/
+    }
+}
+
+/* h2 is About */
+h2 { 
+  text-align: left;
+  font-family: Verdana, Tahoma;
+  letter-spacing: 1.5px;
+  border-bottom: 4px solid #dfdfe2;
+  max-width: 80%;
+  margin-top: 0px;
+  padding-top: 10px; 
+}
+h2::before {
+  content: "//";
+}
+.info {
+  padding: 0.5px;
+}
+/* About */
+
+main {
+  padding-top: 50px; /* header 50px height*/
+}
+
+body {
+  text-align: center;
+  align-items: center;
+  background: #1b1b32;
+  color: #EFEFEF;
+  font-family: Helvetica;
+  margin: 0;
+}
+body a{
+  color: #EFEFEF;
+  text-decoration: none !important; 
+}
+body a:hover{
+  text-decoration: underline;
+  background-color: #f1be32;
+  color: #1b1b32;
+}
+
+.tableOutline{
+  width: 90%;
+  max-width: 850px;
+  aspect-ratio: 5 / 1;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: ;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #9bbc0f;
+  color: #1b1b32;
+  border: 5px outset #272929;
+  border-radius: 5px;
+}
+
+.drawer{
+  max-width: 850px;
+  width: 85%;
+  text-align: justify;
+  padding : 3%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #aaaaaa;
+  color: #1b1b32;
+  border-radius: 15px;
+}
+
+/* The table for Stats */
+.tableDrawer{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #3e4943;
+  text-align: right;
+  table-layout: fixed;
+  border-radius: 3px;
+}
+th{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #000000;
+  background-color: #1b1b32;
+  color: #EFEFEF;
+}
+
+td,tr {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color:#1b1b32;
+  border: 1px solid #3e4943;
+}
+td:nth-child(1) { 
+  text-align: left;
+  font-size: 90%;
+ }
+td:nth-child(2) { 
+  text-align: right;
+  padding-right: 3.25%; 
+ }
+td:nth-child(3) { 
+  text-align: right;
+  padding-right: 1.25%; 
+ }
+/* The table for Stats */
+
+.resultdiv {
+font-family: "Times New Roman";
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+#output{
+  align-content: center;
+  font-weight: bold;
+  font-size: 30px;
+}
