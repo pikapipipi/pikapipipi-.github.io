@@ -6,7 +6,7 @@ const dataArr= [
       imgsrc: "./image/pkm_search.png",
       title: "Pokemon Search",
       caption: "Learning how to fetch data from an external API.",
-	uploaddate: 20231223
+	uploaddate: 20231223,
     },
     {
       gallery:"freecodecamp",
@@ -23,15 +23,25 @@ const dataArr= [
       imgsrc: "./image/romannumeral.png",
       title: "Roman Numeral Converter",
       caption: "Learning how to perform calculations based on user input.",
-	uploaddate: 20231227
-    },    {
+	uploaddate: 20231227,
+    },
+	{
       gallery:"freecodecamp",
       ahref: "index.html#homework",
       aalt:"webpage",
       imgsrc: "./image/webpage.png",
       title: "This Webpage",
       caption: "Learning how to work with DOM manipulation, object destructuring and data filtering.",
-	uploaddate: 20231228
+	uploaddate: 20231228,
+	},
+   	{
+      gallery:"freecodecamp",
+      ahref: "cashregister/cashregister.html",
+      aalt:"cash register",
+      imgsrc: "./image/cashregister.png",
+      title: "Cash Register",
+      caption: "Learning how to work with floating point calculations.",
+	uploaddate: 20240120,
 	},
     {
       gallery:"gsuite",
@@ -40,7 +50,7 @@ const dataArr= [
       imgsrc: "./image/chemical_search.png",
       title: "Sheets for Searching Inventory",
       caption: "Aim to find any items in a second. Delighted it's still looked after by my old labmates.",
-	uploaddate: 20220830
+	uploaddate: 20220830,
     },
     {
       gallery:"gsuite",
@@ -49,7 +59,7 @@ const dataArr= [
       imgsrc: "./image/googlecalendar.png",
       title: "Google Sheets Apps Script",
       caption: "Batch upload list of events from spreadsheet to calendar.",
-	uploaddate: 20220829
+	uploaddate: 20220829,
     },
     {
       gallery:"gsuite",
@@ -58,7 +68,7 @@ const dataArr= [
       imgsrc: "./image/googlesite.png",
       title: "Google's Site",
       caption: 'A prototype for my labmates, and later handed to my colleagues.<a target="_blank" href="https://sites.google.com/study.hkmu.edu.hk/labtools/" alt="Google Site"><u>Click here for their site.</u></a>',
-	  uploaddate: 20220828
+	  uploaddate: 20220828,
     }
 
 ];
