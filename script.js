@@ -36,7 +36,7 @@ const dataArr= [
 	},
    	{
       gallery:"freecodecamp",
-      ahref: "cashregister/cashregister.html",
+      ahref: "./cashregister/cashregister.html",
       aalt:"cash register",
       imgsrc: "./image/cashregister.png",
       title: "Cash Register",
