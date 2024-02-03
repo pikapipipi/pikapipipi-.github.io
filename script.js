@@ -1,11 +1,20 @@
 const dataArr = [
   {
     gallery: "freecodecamp",
+    ahref: "https://pikapipipi.github.io/markdownpreviewer",
+    aalt: "markdown previewer",
+    imgsrc: "./image/markdownpreviewer.png",
+    title: "Markdown Previewer",
+    caption: "Learning how to live rendering and copy functionality in React using the react-markdown library and Clipboard API.",
+    uploaddate: 20240203,
+  },
+  {
+    gallery: "freecodecamp",
     ahref: "https://pikapipipi.github.io/randomquote",
     aalt: "random quote",
     imgsrc: "./image/randomquote.png",
     title: "Random Quotes",
-    caption: "Learning how to work with React library with conditional rendering and short circuit evaluation",
+    caption: "Learning how to work with React library with conditional rendering and short circuit evaluation.",
     uploaddate: 20240129,
   },
   {
@@ -41,7 +50,7 @@ const dataArr = [
     aalt: "palindrome",
     imgsrc: "./image/palindrome_checker.png",
     title: "Palindrome Checker",
-    caption: "Learning how to validate user input",
+    caption: "Learning how to validate user input.",
     uploaddate: 20231225,
   },
   {
