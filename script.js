@@ -5,7 +5,7 @@ const dataArr = [
     aalt: "drum machine",
     imgsrc: "./image/drummachine.png",
     title: "Drum Machine",
-    caption: "Learning to interact with buttons and event handlers in React by using the useEffect hook to listening for key presses and ensuring specific code runs only once during component mount.",
+    caption: "Learning to interact with buttons and event handlers in React using useEffect for key presses and  execute specific code during component mount.",
     uploaddate: 20240204,
   },
   {
@@ -112,10 +112,13 @@ const setGalleryhw = (arr = dataArr, innerHTMLbyID) => {
       `<div class="galleryhw">
 			<a href="${ahref}" alt="${aalt}"${gallery === 'gsuite' ? ' target="_blank"' : ''}>
 				<img src="${imgsrc}"></a><br/>
+        
 					<span class="gallerytitle">
-					<a href="${ahref}" alt="${aalt}"${gallery === 'gsuite' ? ' target="_blank"' : ''}>${title}</a>
+					<a href="${ahref}" alt="${aalt}"${gallery === 'gsuite' ? ' target="_blank"' : ''}>
+          ${title}</a>
 					</span>
-				<span class="gallerycaption">${caption}</span>
+				<span class="gallerycaption">
+        ${caption}</span>
 		</div>`
   ).join("");
 
@@ -130,3 +133,16 @@ setGalleryhw(
   dataArr.filter((dataArr) => dataArr.gallery === "gsuite")
   , gsuiteHTML);
 
+
+function AutoSmallerFont() {
+  document.addEventListener('DOMContentLoaded', () => {
+    const elems = [...document.querySelectorAll('.gallerycaption')];
+
+    elems.forEach((caption) => {
+      const isWrapped = caption.getClientRects().length > 3;
+      if (isWrapped) {
+        caption.style.fontSize = 'smaller';
+      }
+    });
+  });
+}
