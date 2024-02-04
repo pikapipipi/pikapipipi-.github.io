@@ -1,6 +1,15 @@
 const dataArr = [
   {
     gallery: "freecodecamp",
+    ahref: "https://pikapipipi.github.io/drummachine",
+    aalt: "drum machine",
+    imgsrc: "./image/drummachine.png",
+    title: "Drum Machine",
+    caption: "Learning to interact with buttons and event handlers in React by using the useEffect hook to listening for key presses and ensuring specific code runs only once during component mount.",
+    uploaddate: 20240204,
+  },
+  {
+    gallery: "freecodecamp",
     ahref: "https://pikapipipi.github.io/markdownpreviewer",
     aalt: "markdown previewer",
     imgsrc: "./image/markdownpreviewer.png",
