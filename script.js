@@ -1,6 +1,15 @@
 const dataArr = [
   {
     gallery: "freecodecamp",
+    ahref: "https://pikapipipi.github.io/javascriptcalculator",
+    aalt: "javascript calculator",
+    imgsrc: "./image/javascriptcalculator.png",
+    title: "Javascript Calculator",
+    caption: "Learning further about React on state management and event handling. Exploring dynamic CSS styling and conditional rendering based on input.",
+    uploaddate: 20240212,
+  },
+  {
+    gallery: "freecodecamp",
     ahref: "https://pikapipipi.github.io/drummachine",
     aalt: "drum machine",
     imgsrc: "./image/drummachine.png",
