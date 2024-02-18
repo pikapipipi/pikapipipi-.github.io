@@ -1,6 +1,15 @@
 const dataArr = [
   {
     gallery: "freecodecamp",
+    ahref: "https://pikapipipi.github.io/25plus5clock",
+    aalt: "25 plus 5 clock calculator",
+    imgsrc: "./image/25plus5clock.png",
+    title: "25 + 5 Clock",
+    caption: "Learning further about React on state management and event handling and useEffect hook to deal with time operations, along with dynamic styling.",
+    uploaddate: 20240218,
+  },
+  {
+    gallery: "freecodecamp",
     ahref: "https://pikapipipi.github.io/javascriptcalculator",
     aalt: "javascript calculator",
     imgsrc: "./image/javascriptcalculator.png",
