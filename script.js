@@ -5,7 +5,7 @@ const dataArr = [
     aalt: "25 plus 5 clock calculator",
     imgsrc: "./image/25plus5clock.png",
     title: "25 + 5 Clock",
-    caption: "Learning further about React on state management and event handling and useEffect hook to deal with time operations, along with dynamic styling.",
+    caption: "Learning further about React on useEffect hook with setTimeout to deal with time-related operations, along with dynamic styling.",
     uploaddate: 20240218,
   },
   {
