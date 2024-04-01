@@ -1,5 +1,6 @@
 ## Periodic Table Database
-This is for the [freeCodeCamp Relational Database, Priodic Table Database project](https://www.freecodecamp.org/learn/relational-database/build-a-periodic-table-database-project/build-a-periodic-table-database). 
+
+This is for the [freeCodeCamp Relational Database, Periodic Table Database project](https://www.freecodecamp.org/learn/relational-database/build-a-periodic-table-database-project/build-a-periodic-table-database).
 
 To run this project, please go to the link above and create your own Gitpod first.
 
@@ -7,9 +8,9 @@ To run this project, please go to the link above and create your own Gitpod firs
 
 ## Instructions
 
-### Part 1: Create your git repository
+### Part 1: Create your Git repository
 
-#### 1.1 Turn the suggested folder into git repository for version control with Bash terminal, by enter
+#### 1.1 Turn the project into a Git repository for version control with Bash terminal by entering
 ```
 git init
 git checkout -b main
@@ -19,32 +20,32 @@ git commit -m "Initial commit"
 #### 1.2 During the editing, please feel free to track records with
 ```
 git add <your_edited_file>
-git commit -m "<any_discribation_of_the_edit>"
+git commit -m "<any_description_of_the_edit>"
 ```
 
 
 ### Part 2: Fix the database
 
-Based on the project requirements, serval data has to be edited, which can be fixed with `./TEST_element.sh` and `periodic_table.sql`
+Based on the project requirements, several data have to be edited, which can be fixed with `./TEST_element.sh` and `periodic_table.sql`
 
-#### 2.1 Enable PostgreSQL database, by enter in terminal
+#### 2.1 Enable the PostgreSQL database by entering in the terminal
 
 ```
 psql --username=freecodecamp --dbname=periodic_table
 ``` 
-This terminal will be now connected with PostgreSQL 
-Feel free to explore tables such as entering
+This terminal will now be connected with PostgreSQL. 
+Feel free to explore tables such as by entering
 
 ```
-SELECT * FROM properties FULL JOIN elements on properties.atomic_number = elements.atomic_number;
+SELECT * FROM properties FULL JOIN elements ON properties.atomic_number = elements.atomic_number;
 ``` 
 
-#### 2.2 Split terminal. Make a backup for the data in the newly splited Bash terminal, by enter 
+#### 2.2 Split the terminal. Make a backup for the data in the newly split Bash terminal by entering 
 ```
 pg_dump -cC --inserts -U freecodecamp periodic_table > periodic_table.sql
 ``` 
 
-#### 2.3 Create fix file `TEST_element.sh` with Bash terminal, by enter 
+#### 2.3 Create a fix file `TEST_element.sh` with Bash terminal by entering 
 ```
 mkdir periodic_table
 cd periodic_table
@@ -53,28 +54,27 @@ chmod +x TEST_element.sh
 ```
 Copy and paste all content from the same name .sh file of this repo, save the .sh file
 
-#### 2.4 Run the fix file with Bash terminal, by enter
+#### 2.4 Run the fix file with Bash terminal by entering
 ```
-./ TEST_element.sh
+./TEST_element.sh
 ```
-#### (Optional) To roll back from the initial backup file. In Bash terminal, enter
+#### (Optional) To roll back from the initial backup file, in Bash terminal enter
 ```
 psql -U postgres < periodic_table.sql
 ```
 
 ### Part 3: Create the script
-#### 3.1 Create shell scipt file `element.sh` with Bash terminal, by enter 
+#### 3.1 Create a shell script file `element.sh` with Bash terminal by entering 
 ```
 touch element.sh
 chmod +x element.sh
 ```
 Copy and paste all content from the same name .sh file of this repo, save the .sh file
 
-#### 3.2 Run the fix file with Bash terminal, by enter
+#### 3.2 Run the fix file with Bash terminal by entering
 ```
-./ TEST_element.sh
+./TEST_element.sh
 ```
-
 ---
 ## Project requirements
 1. Rename the `weight` column to `atomic_mass`.
