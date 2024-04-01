@@ -71,10 +71,11 @@ chmod +x element.sh
 ```
 Copy and paste all content from the same name .sh file of this repo, save the .sh file
 
-#### 3.2 Run the fix file with Bash terminal by entering
-```
-./TEST_element.sh
-```
+#### 3.2 Run `element.sh` with Bash terminal by entering such as
+`./element.sh 1` Or `./element.sh Hydrogen`
+
+Which the 1 or Hydrogen here, the first argument of element.sh, could be atomic number / symbol / name wishing to query as the project requirements said so. 
+
 ---
 ## Project requirements
 1. Rename the `weight` column to `atomic_mass`.
