@@ -1,6 +1,6 @@
 const dataArr = [
   { gallery: "freecodecamp",
-    ahref: "https://pikapipipi.github.io/relationaldatabase/relationaldatabase.html",
+    ahref: "https://pikapipipi.github.io/RelationalDatabase/relationaldatabase.html",
     aalt: "relational databases",
     imgsrc: "./image/relationaldatabases.png",
     title: "Relational Databases",
