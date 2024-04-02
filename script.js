@@ -1,4 +1,12 @@
 const dataArr = [
+  { gallery: "freecodecamp",
+    ahref: "https://pikapipipi.github.io/relationaldatabase/relationaldatabase.html",
+    aalt: "relational databases",
+    imgsrc: "./image/relationaldatabases.png",
+    title: "Relational Databases",
+    caption: "Learning basic Bash commands and PostgreSQL to create and manipulate relational databases. Also, gaining basic ideas about version control with Git.",
+    uploaddate: 20240401,
+  },
   {
     gallery: "freecodecamp",
     ahref: "https://pikapipipi.github.io/25plus5clock",

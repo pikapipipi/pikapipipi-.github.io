@@ -192,6 +192,11 @@ h2::before {
   justify-content: start;
 }
 
+.galleryhw:hover {
+  transform: translate(4px, 4px); /*.gallery gap: 4%;*/
+  box-shadow: 8px 8px #206060;
+}
+
 .galleryhw img {
   vertical-align: top;
   aspect-ratio: 1 / 1;
@@ -200,12 +205,6 @@ h2::before {
   border-radius: 5px;
 }
 
-/*
-.galleryhw img:hover {
-  transform: translate(4px, 4px);
-  box-shadow: 5px 5px #206060;
-}
-*/
 .gallerytitle {
   display: block;
   text-align: center;
