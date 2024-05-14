@@ -2,9 +2,9 @@ const dataArr = [
   {
     gallery: "freecodecamp",
     ahref: "https://github.com/pikapipipi/boilerplate-project-headerparser",
-    aalt: "Timestamp Microservice ",
+    aalt: "Request Header Parser Microservice",
     imgsrc: "./image/boilerplate-project-headerparser.png",
-    title: "Timestamp Microservice ",
+    title: "Request Header Parser Microservice",
     caption: "Learning how to build microservice API with request header.",
     uploaddate: 20240514,
   },
